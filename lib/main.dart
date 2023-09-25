@@ -5,6 +5,8 @@ import 'package:blue_crew/Worker Side/workerSignUp.dart';
 import 'package:blue_crew/Customer Side/customerSignUp.dart';
 import 'package:blue_crew/Customer Side/customerLogin.dart';
 import 'package:blue_crew/Customer Side/cutomerHomePage.dart';
+import 'package:blue_crew/Worker Side/workerLogIn.dart';
+import 'package:blue_crew/Worker Side/identityVerification.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,12 +22,18 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       initialRoute: 'splashScreen',
       routes: {
+        //Common Pages
         'splashScreen' : (context) => SplashScreen(),
         'startScreen' : (context) => StartScreen(),
+        //Worker Side
         'workerSignUp' : (context) => WorkerSignUp(),
+        'workerLogIn':(context) => WorkerLogIn(),
+        'identityVerification': (context) => IdentityVerification(),
+        //Customer Side
         'customerSignUp' : (context) => CustomerSignUp(),
         'customerLogIn': (context) => CustomerLogIn(),
         'customerHomePage' : (context) => CustomerHomePage(),
+
       },
     );
   }
