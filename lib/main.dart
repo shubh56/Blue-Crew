@@ -6,7 +6,9 @@ import 'package:blue_crew/Customer Side/customerSignUp.dart';
 import 'package:blue_crew/Customer Side/customerLogin.dart';
 import 'package:blue_crew/Customer Side/cutomerHomePage.dart';
 import 'package:blue_crew/Worker Side/workerLogIn.dart';
-import 'package:blue_crew/Worker Side/identityVerification.dart';
+import 'package:blue_crew/Worker Side/aadharVerification.dart';
+import 'package:blue_crew/Worker Side/selfieVerification.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +30,8 @@ class MyApp extends StatelessWidget {
         //Worker Side
         'workerSignUp' : (context) => WorkerSignUp(),
         'workerLogIn':(context) => WorkerLogIn(),
-        'identityVerification': (context) => IdentityVerification(),
+        'aadharVerification': (context) => IdentityVerification(),
+        'selfieVerification': (context) => SelfieVerification(),
         //Customer Side
         'customerSignUp' : (context) => CustomerSignUp(),
         'customerLogIn': (context) => CustomerLogIn(),

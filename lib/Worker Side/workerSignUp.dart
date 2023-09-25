@@ -87,7 +87,7 @@ class _WorkerSignUpState extends State<WorkerSignUp> {
                         backgroundColor: MaterialStatePropertyAll(kYellow),
                       ),
                       onPressed: (){
-                        Navigator.pushReplacementNamed(context, 'identityVerification');
+                        Navigator.pushNamed(context, 'aadharVerification');
                       },
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
