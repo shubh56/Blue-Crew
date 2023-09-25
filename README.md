@@ -1,4 +1,4 @@
-# blue_crew
+# Blue Crew
 
 Flutter application for Blue Collar workers to connect them with costumers
 
